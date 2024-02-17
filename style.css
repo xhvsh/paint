@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+  min-width: fit-content;
+  background: #333;
+}
+h1 {
+  color: #fff;
+}
+/* CAT SIZE: 41 x 55 */
+.container {
+  width: 660px;
+  height: 492px;
+  display: grid;
+  grid-template-columns: repeat(55, 12px);
+  grid-template-rows: repeat(41, 12px);
+  background: url(./cat.png);
+  border-radius: 10px;
+  overflow: hidden;
+}
+div {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  background: #a00;
+}
+.invisible {
+  background: transparent;
+}
+.done {
+  color: #0a0;
+}
